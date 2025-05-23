@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Company Name</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 30px;
+      padding: 20px;
+      background: #f0f0f0;
+      animation: slide 20s linear infinite;
+    }
+    .slider img {
+      height: 60px;
+    }
+
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .service-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .service-section.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .service-text {
+      flex: 1;
+    }
+
+    .service-img {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    .service-img img {
+      width: 250px;
+      border-radius: 8px;
+    }
+
+    .bold {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="left">dummy@email.com</div>
+    <div class="right">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <img src="https://via.placeholder.com/150x50" alt="Logo" />
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="#">How it Works</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Logo Slider -->
+  <div class="slider">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+  </div>
+
+  <!-- Services Sections -->
+  <section class="service-section">
+    <div class="service-text">
+      <h3>Frontend Development</h3>
+      <p>Create visually stunning and highly responsive websites using the latest frontend technologies. Our developers specialize in:</p>
+      <div class="bold">Technologies:</div>
+      <p>React.js, Angular, Vue.js, HTML5, CSS3, JavaScript, and Bootstrap.</p>
+      <div class="bold">Focus:</div>
+      <p>Building interactive, user-friendly interfaces that ensure an engaging user experience, fast load times, and smooth navigation.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=Frontend+Logos" alt="Frontend Logos"/>
+    </div>
+  </section>
+
+  <section class="service-section reverse">
+    <div class="service-text">
+      <h3>Backend Development</h3>
+      <p>Develop powerful backend systems to ensure your website runs seamlessly and securely.</p>
+      <div class="bold">Technologies:</div>
+      <p>Node.js, Express, Django, Ruby on Rails, and Laravel.</p>
+      <div class="bold">Focus:</div>
+      <p>Creating secure, scalable, and fast-performing backend architectures that support business logic and data operations.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=Backend+Logos" alt="Backend Logos"/>
+    </div>
+  </section>
+
+  <section class="service-section">
+    <div class="service-text">
+      <h3>UI/UX Design</h3>
+      <p>Delivering intuitive and visually appealing designs that prioritize the user journey.</p>
+      <div class="bold">Technologies:</div>
+      <p>Figma, Adobe XD, Sketch, InVision, and Zeplin.</p>
+      <div class="bold">Focus:</div>
+      <p>Designing wireframes, prototypes, and full user interfaces that drive better conversion and satisfaction.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=UIUX+Design" alt="UI/UX Design"/>
+    </div>
+  </section>
+
+  <section class="service-section reverse">
+    <div class="service-text">
+      <h3>Full Stack Development</h3>
+      <p>Offering end-to-end development from frontend to backend to bring complete digital products to life.</p>
+      <div class="bold">Technologies:</div>
+      <p>MERN Stack, MEAN Stack, Django + React, Laravel + Vue.</p>
+      <div class="bold">Focus:</div>
+      <p>Building comprehensive, scalable solutions with seamless integration between front and back ends.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=Full+Stack" alt="Full Stack"/>
+    </div>
+  </section>
+
+  <section class="service-section">
+    <div class="service-text">
+      <h3>E-Commerce Website</h3>
+      <p>Build powerful e-commerce platforms tailored to your business model.</p>
+      <div class="bold">Technologies:</div>
+      <p>Shopify, WooCommerce, Magento, Custom PHP, React Commerce.</p>
+      <div class="bold">Focus:</div>
+      <p>Secure payment gateway, product management, inventory tracking, and seamless customer experience.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=E-Commerce" alt="E-Commerce"/>
+    </div>
+  </section>
+
+  <section class="service-section reverse">
+    <div class="service-text">
+      <h3>Cloud Enabled Website</h3>
+      <p>Deploy robust cloud-native applications that scale with your business.</p>
+      <div class="bold">Technologies:</div>
+      <p>AWS, Azure, Google Cloud, Docker, Kubernetes.</p>
+      <div class="bold">Focus:</div>
+      <p>Speed, reliability, auto-scaling, and deployment automation.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=Cloud+Website" alt="Cloud"/>
+    </div>
+  </section>
+
+  <section class="service-section">
+    <div class="service-text">
+      <h3>API Integration for Website</h3>
+      <p>Enhance functionality with seamless third-party API integrations.</p>
+      <div class="bold">Technologies:</div>
+      <p>RESTful APIs, GraphQL, Payment APIs, Social Media APIs, Custom APIs.</p>
+      <div class="bold">Focus:</div>
+      <p>Fast integration, secure authentication, and real-time data access.</p>
+    </div>
+    <div class="service-img">
+      <img src="https://via.placeholder.com/250?text=API+Integration" alt="API"/>
+    </div>
+  </section>
+
+  <!-- Address -->
+  <section class="address">
+    <h2>Our Address</h2>
+    <p>Dummy address here.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Credit: Rahul | &copy; 2025 All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
